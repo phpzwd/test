@@ -2,6 +2,9 @@
   "name": "phpzwd/test",
   "description": "A test package",
   "type": "library",
+  "require-dev": {
+    "pestphp/pest": "^2.30"
+  },
   "license": "MIT",
   "authors": [
     {
@@ -12,8 +15,17 @@
   "minimum-stability": "stable",
   "autoload": {
     "psr-4": {
-      "TestPackage\\": "src/"
+      "Phpzwd\\Test\\": "src/"
     }
   },
-  "require": {}
+  "autoload-dev": {
+    "psr-4": {
+      "Phpzwd\\Test\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
 }
