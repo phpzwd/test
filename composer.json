@@ -1,0 +1,19 @@
+{
+  "name": "phpzwd/test",
+  "description": "A test package",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "zhangweidong",
+      "email": "boyphp@163.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "TestPackage\\": "src/"
+    }
+  },
+  "require": {}
+}
